@@ -297,6 +297,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            border: 3px solid rgba(255,255,255,0.25);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
         }
 
         .about-text h2 {
@@ -409,7 +419,7 @@
             <div class="logo-box">
                 <img src="assets/logo-vertical.png" alt="Sobrinho Serviços Condominiais" class="logo-img">
             </div>
-            <a href="tel:+5531986801251" class="btn-header">Ligar</a>
+            <a href="tel:+5531986801251" class="btn-header btn-call-link">Ligar</a>
         </div>
     </header>
 
@@ -423,7 +433,7 @@
                 <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
                     Solicitar Proposta sem Compromisso
                 </a>
-                <a href="tel:+5531986801251" class="btn-call">
+                <a href="tel:+5531986801251" class="btn-call btn-call-link">
                     Ligar agora
                 </a>
             </div>
@@ -510,7 +520,7 @@
     <section class="about-section">
         <div class="container">
             <div class="about-box">
-                <div class="avatar">ES</div>
+                <div class="avatar"><img src="assets/eduardo.jpg" alt="Eduardo Sobrinho"></div>
                 <div class="about-text">
                     <h2>Quem cuida do seu condomínio</h2>
                     <div class="role">Eduardo Sobrinho · Síndico Profissional</div>
@@ -530,7 +540,7 @@
                 <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
                     Peça pelo WhatsApp
                 </a>
-                <a href="tel:+5531986801251" class="btn-call">
+                <a href="tel:+5531986801251" class="btn-call btn-call-link">
                     Ligar agora
                 </a>
             </div>
@@ -542,6 +552,26 @@
         <p>&copy; 2026 Sobrinho Serviços Condominiais - Todos os direitos reservados.</p>
         <p>Belo Horizonte / MG | <a href="mailto:contato@sobrinho.com">contato@sobrinho.com</a> | (31) 98680-1251</p>
     </footer>
+
+    <script>
+        // Em desktop, "tel:" geralmente não faz nada (não há app de telefone associado).
+        // Nesse caso, copiamos o número para a área de transferência e avisamos o visitante.
+        (function () {
+            var isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || navigator.maxTouchPoints > 0;
+            if (isMobile) return; // no celular, deixa o comportamento padrão do tel: funcionar
+
+            var phone = "(31) 98680-1251";
+            document.querySelectorAll('.btn-call-link').forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (navigator.clipboard) {
+                        navigator.clipboard.writeText(phone).catch(function () {});
+                    }
+                    alert("Número copiado: " + phone + "\nLigue a partir do seu celular ou use o WhatsApp.");
+                });
+            });
+        })();
+    </script>
 
 </body>
 </html>

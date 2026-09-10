@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobrinho Serviços Condominiais - Síndico Profissional em Belo Horizonte</title>
-    <meta name="description" content="Síndico profissional em Belo Horizonte para condomínios pequenos. Transparência, organização e presença real na gestão do seu prédio, sem taxa de adesão.">
-
-    <!-- Open Graph / preview ao compartilhar no WhatsApp -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sobrinho Serviços Condominiais - Síndico Profissional em BH">
-    <meta property="og:description" content="Gestão condominial com transparência, organização e presença real. Peça uma proposta sem compromisso.">
-    <meta property="og:image" content="https://sobrinho.com/assets/logo-vertical.png">
-    <meta property="og:url" content="https://sobrinho.com">
-    <meta name="twitter:card" content="summary">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -126,13 +116,6 @@
             letter-spacing: 1px;
         }
 
-        .hero-ctas {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
         /* SECTION COMMON */
         section {
             padding: 50px 20px;
@@ -190,47 +173,6 @@
             color: var(--text-muted);
         }
 
-        /* PROCESS / COMO FUNCIONA */
-        .steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 25px;
-            counter-reset: step;
-        }
-
-        .step {
-            background: var(--white);
-            padding: 28px 24px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            position: relative;
-        }
-
-        .step-number {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: var(--primary-green);
-            color: var(--white);
-            font-weight: 800;
-            font-size: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 14px;
-        }
-
-        .step h3 {
-            font-size: 16px;
-            color: var(--text-dark);
-            margin-bottom: 8px;
-        }
-
-        .step p {
-            font-size: 13.5px;
-            color: var(--text-muted);
-        }
-
         /* DIFFERENTIAL / NICHE */
         .niche-box {
             background: var(--white);
@@ -269,57 +211,6 @@
             font-weight: bold;
         }
 
-        /* SOBRE / QUEM CUIDA */
-        .about-section {
-            background: var(--dark-green);
-        }
-
-        .about-box {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-            background: rgba(255,255,255,0.04);
-            border-radius: 12px;
-            padding: 36px;
-            flex-wrap: wrap;
-        }
-
-        .avatar {
-            width: 96px;
-            height: 96px;
-            min-width: 96px;
-            border-radius: 50%;
-            background: var(--secondary-green);
-            color: var(--dark-green);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            font-size: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about-text h2 {
-            color: var(--white);
-            font-size: 22px;
-            margin-bottom: 6px;
-            text-align: left;
-        }
-
-        .about-text .role {
-            color: #A7F3D0;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-        }
-
-        .about-text p {
-            color: #CBD5E1;
-            font-size: 14.5px;
-        }
-
         /* CTA SECTION */
         .cta-section {
             background: var(--white);
@@ -347,35 +238,6 @@
             background-color: #1EBE5D;
         }
 
-        .btn-call {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background-color: transparent;
-            color: var(--white);
-            border: 2px solid rgba(255,255,255,0.5);
-            font-size: 16px;
-            font-weight: 700;
-            padding: 14px 28px;
-            border-radius: 50px;
-            text-decoration: none;
-            transition: background 0.2s, border-color 0.2s;
-        }
-
-        .btn-call:hover {
-            background-color: rgba(255,255,255,0.1);
-            border-color: var(--white);
-        }
-
-        .cta-section .btn-call {
-            color: var(--primary-green);
-            border-color: var(--primary-green);
-        }
-
-        .cta-section .btn-call:hover {
-            background-color: #F0FDF4;
-        }
-
         /* FOOTER */
         footer {
             background-color: var(--dark-green);
@@ -384,16 +246,6 @@
             padding: 25px 20px;
             font-size: 13px;
             color: #94A3B8;
-        }
-
-        footer a {
-            color: #A7F3D0;
-            text-decoration: none;
-        }
-
-        @media (max-width: 600px) {
-            .about-box { flex-direction: column; text-align: center; }
-            .about-text h2 { text-align: center; }
         }
     </style>
     <!-- Favicons e Ícones -->
@@ -409,24 +261,18 @@
             <div class="logo-box">
                 <img src="assets/logo-vertical.png" alt="Sobrinho Serviços Condominiais" class="logo-img">
             </div>
-            <a href="tel:+5531986801251" class="btn-header">(31) 98680-1251</a>
         </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-container">
-            <span class="badge">Síndico Profissional em BH</span>
+            <span class="badge">Sindicatura Profissional em BH</span>
             <h1>Seu condomínio gerido com transparência, organização e presença real.</h1>
             <p>Tire a sobrecarga dos moradores com uma gestão simples, eficiente e próxima.</p>
-            <div class="hero-ctas">
-                <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
-                    Solicitar Proposta sem Compromisso
-                </a>
-                <a href="tel:+5531986801251" class="btn-call">
-                    Ligar agora
-                </a>
-            </div>
+            <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
+                Solicitar Proposta sem Compromisso
+            </a>
         </div>
     </section>
 
@@ -456,44 +302,13 @@
         </div>
     </section>
 
-    <!-- COMO FUNCIONA -->
-    <section style="background-color: #E2E8F0;">
-        <div class="container">
-            <h2 class="section-title">Como Funciona</h2>
-            <p class="section-subtitle">Do primeiro contato à gestão em pleno funcionamento, sem burocracia.</p>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Diagnóstico gratuito</h3>
-                    <p>Conversa de 20-30 minutos, presencial ou por WhatsApp, para entender a situação atual do condomínio.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Proposta sob medida</h3>
-                    <p>Honorário definido conforme o porte do condomínio, sem taxa de adesão ou surpresas no contrato.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Aprovação em assembleia</h3>
-                    <p>Apoio na organização da assembleia de troca de síndico, com toda a documentação necessária.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Gestão em andamento</h3>
-                    <p>Início da rotina de visitas, prestação de contas mensal e acompanhamento contínuo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- NICHE / DIFFERENTIAL -->
-    <section>
+    <section style="background-color: #E2E8F0; padding: 40px 20px;">
         <div class="container">
             <div class="niche-box">
                 <h2 class="section-title" style="text-align: left;">Atendemos Condomínios de Pequeno Porte</h2>
-                <p style="color: var(--text-muted); margin-top: 10px;">Entendemos a realidade de condomínios menores e oferecemos uma solução sob medida, sem custos desnecessários.</p>
-
+                <p style="color: var(--text-muted); margin-top: 10px;">Entendemos a realidade dE condomínios menores e Oferecemos uma solução sob medida sem custos desnecessários.</p>
+                
                 <ul class="checklist">
                     <li>Atendimento rápido e direto via WhatsApp</li>
                     <li>Visitas presenciais periódicas</li>
@@ -506,41 +321,22 @@
         </div>
     </section>
 
-    <!-- SOBRE / QUEM CUIDA -->
-    <section class="about-section">
-        <div class="container">
-            <div class="about-box">
-                <div class="avatar">ES</div>
-                <div class="about-text">
-                    <h2>Quem cuida do seu condomínio</h2>
-                    <div class="role">Eduardo Sobrinho · Síndico Profissional</div>
-                    <p>Mais de 20 anos de experiência em gestão de processos, organização e indicadores, hoje a serviço do seu condomínio. Já foi síndico morador e sabe, na prática, os desafios de administrar um prédio pequeno — atua em Belo Horizonte com a mesma disciplina usada em grandes empresas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <h2 class="section-title">Seu condomínio precisa de uma gestão profissional?</h2>
             <p class="section-subtitle">Agende uma conversa e receba uma proposta personalizada.</p>
-
-            <div class="hero-ctas">
-                <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
-                    Peça pelo WhatsApp
-                </a>
-                <a href="tel:+5531986801251" class="btn-call">
-                    Ligar agora
-                </a>
-            </div>
+            
+            <a href="https://wa.me/5531986801251?text=Olá,%20gostaria%20de%20solicitar%20uma%20proposta%20de%20síndico%20profissional." class="btn-whatsapp">
+                Peça pelo WhatsApp
+            </a>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Sobrinho Serviços Condominiais - Todos os direitos reservados.</p>
-        <p>Belo Horizonte / MG | <a href="mailto:contato@sobrinho.com">contato@sobrinho.com</a> | (31) 98680-1251</p>
+        <p>Belo Horizonte / MG | atendimento@sobrinho.com</p>
     </footer>
 
 </body>
